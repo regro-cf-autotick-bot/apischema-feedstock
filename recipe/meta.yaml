@@ -1,5 +1,5 @@
 {% set name = "apischema" %}
-{% set version = "0.16.6" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/wyfo/apischema/archive/v{{ version }}.tar.gz
-  sha256: c06d7ae8a7ed731d15f9b1b35f843d398be4bef57381fe49c59914c3eb898685
+  sha256: cb29552b91149777e2a970e228114cf817de2347540f3bf1e2b6841747363fb5
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.6,<3.11
     - pip
   run:
-    - python >=3.6
+    - python >=3.6,<3.11
     # dataclasses is only required for Python 3.6.  conda is smart enough to
     # not install it for Python >=3.7 in this noarch build.  See the
     # conda-forge knowledgebase on empty Python packages.
@@ -39,7 +39,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: JSON (de)serialization + GraphQL and JSON schema generation through python typing, with a spoonful of sugar.
+  summary: JSON (de)serialization, GraphQL and JSON schema generation using Python typing.
 
 extra:
   recipe-maintainers:
