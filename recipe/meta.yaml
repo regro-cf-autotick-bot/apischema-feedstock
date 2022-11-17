@@ -39,7 +39,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: JSON (de)serialization + GraphQL and JSON schema generation through python typing, with a spoonful of sugar.
+  summary: JSON (de)serialization, GraphQL and JSON schema generation using Python typing.
 
 extra:
   recipe-maintainers:
