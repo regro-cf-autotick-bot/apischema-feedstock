@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apischema-feedstock/blob/master/LICENSE.txt)
 
-Summary: JSON (de)serialization + GraphQL and JSON schema generation through python typing, with a spoonful of sugar.
+Summary: JSON (de)serialization, GraphQL and JSON schema generation using Python typing.
 
 Development: https://github.com/wyfo/apischema
 
