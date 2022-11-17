@@ -1,5 +1,5 @@
 {% set name = "apischema" %}
-{% set version = "0.17.1" %}
+{% set version = "0.17.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/wyfo/apischema/archive/v{{ version }}.tar.gz
-  sha256: c8a7637c77a2395c7935d7c7199dabcf7a1abdd5e33b19f6c7185c0ef1bb7002
+  sha256: 0d3346294504cbe5cfd0b62d63d46e975a8982d54b3f8e6d973b57ca4236c375
 
 build:
   noarch: python
