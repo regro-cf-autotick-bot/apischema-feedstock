@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6,<3.11
+    - python >=3.7
     - pip
   run:
-    - python >=3.6,<3.11
+    - python >=3.7
     # dataclasses is only required for Python 3.6.  conda is smart enough to
     # not install it for Python >=3.7 in this noarch build.  See the
     # conda-forge knowledgebase on empty Python packages.
