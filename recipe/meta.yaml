@@ -20,10 +20,6 @@ requirements:
     - pip
   run:
     - python >=3.7
-    # dataclasses is only required for Python 3.6.  conda is smart enough to
-    # not install it for Python >=3.7 in this noarch build.  See the
-    # conda-forge knowledgebase on empty Python packages.
-    - dataclasses
   run_constrained:
     # The following is needed for the (optional) apischema.graphql to work properly:
     - graphql-core >=3.0.0
