@@ -11,20 +11,22 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
   run_constrained:
     # The following is needed for the (optional) apischema.graphql to work properly:
     - graphql-core >=3.0.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - apischema
 
